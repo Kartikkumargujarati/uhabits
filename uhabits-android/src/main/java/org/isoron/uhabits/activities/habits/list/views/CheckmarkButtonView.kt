@@ -87,7 +87,7 @@ class CheckmarkButtonView(
             Entry.nextToggleValueWithoutSkip(value)
         }
         onToggle(value)
-        performHapticFeedback(HapticFeedbackConstants.LONG_PRESS)
+        performHapticFeedback(HapticFeedbackConstants.VIRTUAL_KEY, HapticFeedbackConstants.FLAG_IGNORE_GLOBAL_SETTING)
         invalidate()
     }
 
